@@ -1,0 +1,8 @@
+---
+image_name: openshift-fluentd-fwd
+labels:
+  maintainer: "jesse@weisner.ca"
+  fluentd_version: '1.9.0-1.0'
+  splunkhec_version: '2.0'
+suffixes:
+  - '1.9.0'

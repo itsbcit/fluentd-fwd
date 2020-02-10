@@ -2,8 +2,9 @@ FROM fluent/fluentd:v1.9.0-1.0
 
 LABEL maintainer="jesse@weisner.ca"
 LABEL fluentd_version="1.9.0-1.0"
-LABEL splunkhec_version="2.0"
-LABEL build_id="1581111109"
+LABEL splunkplugin_version="0.10.0"
+LABEL splunk_plugin="splunk-enterprise"
+LABEL build_id="1581359976"
 
 USER root
 RUN fluent-gem install fluent-plugin-splunk-enterprise -v 0.10.0

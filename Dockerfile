@@ -6,7 +6,7 @@ LABEL splunkhec_version="2.0"
 LABEL build_id="1581111109"
 
 USER root
-RUN fluent-gem install fluent-plugin-splunkhec -v 2.0
+RUN fluent-gem install fluent-plugin-splunk-enterprise -v 0.10.0
 
 RUN chmod 1777 /fluentd/log
 VOLUME /fluentd/log

@@ -3,7 +3,8 @@ FROM fluent/fluentd:v<%= image.labels['fluentd_version'] %>
 <%= snippet('labels', binding) -%>
 
 USER root
-RUN fluent-gem install fluent-plugin-splunk-enterprise -v <%= image.labels['splunkplugin_version'] %>
+RUN fluent-gem install fluent-plugin-splunk-hec -v <%= image.labels['splunkplugin_version'] %>
+RUN fluent-gem install fluent-plugin-rewrite-tag-filter -v <%= image.labels['rewritetag_version'] %>
 
 RUN chmod 1777 /fluentd/log
 VOLUME /fluentd/log

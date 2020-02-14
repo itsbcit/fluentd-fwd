@@ -3,7 +3,8 @@ image_name: openshift-fluentd-fwd
 labels:
   maintainer: "jesse@weisner.ca"
   fluentd_version: '1.9.0-1.0'
-  splunkplugin_version: '0.10.0'
-  splunk_plugin: 'splunk-enterprise'
+  rewritetag_version: '2.2.0'
+  splunkplugin_version: '1.2.0'
+  splunk_plugin: 'splunk-hec'
 suffixes:
   - '1.9.0'
